@@ -9,6 +9,9 @@ export default new LocalizedStrings({
     upcoming: 'القادمة',
     popular: 'المحبوب',
     topRated: 'أعلى التقييمات',
+    submit: 'إرسال',
+    password: 'الرقم السري',
+    email: 'البريد الالكتروني',
   },
   en: {
     lang: 'en',
@@ -18,5 +21,8 @@ export default new LocalizedStrings({
     upcoming: 'Upcoming',
     popular: 'Popular',
     topRated: 'Top Rated',
+    submit: 'Submit',
+    password: 'Password',
+    email: 'Email',
   },
 });

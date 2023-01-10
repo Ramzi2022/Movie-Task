@@ -31,7 +31,7 @@ const LoginScreen = props => {
 
   // useEffect(async () => {}, []);
 
-  const register = props => {
+  const register = () => {
     dispatch({
       type: 'SAVE_USER',
       payload: {
@@ -74,7 +74,7 @@ const LoginScreen = props => {
         style={styles.input}
         onChangeText={txt => setEmail(txt)}
         value={email}
-        placeholder="Email"
+        placeholder={Languages.email}
         placeholderTextColor="#000"
       />
 
@@ -82,8 +82,9 @@ const LoginScreen = props => {
         style={styles.input}
         onChangeText={txt => setPassword(txt)}
         value={password}
-        placeholder="Password"
+        placeholder={Languages.password}
         placeholderTextColor="#000"
+        secureTextEntry
       />
 
       <TouchableOpacity
@@ -99,7 +100,7 @@ const LoginScreen = props => {
         disabled={
           validatePassword(password) && validateEmail(email) ? false : true
         }>
-        <Text style={{color: '#fff'}}>Submit</Text>
+        <Text style={{color: '#fff'}}>{Languages.submit}</Text>
       </TouchableOpacity>
     </View>
   );
